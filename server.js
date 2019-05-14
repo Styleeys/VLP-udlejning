@@ -27,6 +27,7 @@ app.use(protectedRoutes, (req, res, next) => {
 });
 
 require('./routes/forside')(app);
+require('./routes/booking')(app);
 require('./routes/annoncer')(app);
 require('./routes/adminLogin')(app);
 require('./routes/adminOpret')(app);

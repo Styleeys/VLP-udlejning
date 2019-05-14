@@ -1,0 +1,27 @@
+<% include partials/head %>
+<% include partials/header %>
+
+<form action="/adminLogin" method="post" enctype="multipart/form-data">
+    <% if (typeof status != 'undefined') { %>
+		<span class="errorMessage"><%= status %></span>
+	<% } %>
+    <div class="adminLogin">
+        <label>
+            Username:
+            <input type="text" name="username">
+        </label>
+    </div>
+    <div class="adminLogin">
+        <label>
+            Password:
+            <input type="password" name="password">
+        </label>
+    </div>
+    <div class="btnWrap">
+        <button class="btnLogin" type="submit">LOGIN</button>
+    </div>
+</form>
+<div class="x_space"></div>
+
+<% include partials/footer %>
+<% include partials/after-footer %>

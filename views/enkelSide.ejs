@@ -1,0 +1,26 @@
+<% include partials/head %>
+<% include partials/header %>
+
+
+<h1 class="nytEvent">Resultater fra søgning i events</h1>
+
+<div class="arrow">
+    <i class="fas fa-angle-down fa-2x"></i>
+</div>
+
+<div id="resultat">
+<% results.forEach(result => { %>
+    <div class="resultatSøgning">
+        <h2><%= result.title %></h2>
+        <p>KL. <%= result.tid %></p>
+        <p>den.  <%= result.dato %></p>
+        <p>Time:  <%= result.varighed %></p>
+        <p><%= result.sted %></p>
+        <p><%= result.pris %> Kr.</p>
+        <p> INFO: <%= result.info %></p>
+    </div>
+    <% }) %>
+</div>
+
+<% include partials/footer %>
+<% include partials/after-footer %>

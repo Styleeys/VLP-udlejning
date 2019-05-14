@@ -1,0 +1,19 @@
+<% include partials/head %>
+<% include partials/header %>
+<h1 class="nytEvent">Se de nyeste kommende events</h1>
+<div id="boxes">
+        <% results.forEach(result => { %>
+    <div class="box">
+        <h2><%= result.title %></h2>
+        <p>Kl. <%= result.tid %></p>
+        <p>Dato: <%= result.dato %></p>
+        <p><%= result.varighed %> Time</p>  
+        <p><%= result.sted %></p>  
+        <p><%= result.pris %> kr.</p>  
+        <p>INFO: <%= result.info %></p>
+    </div>
+    <% }) %>
+</div>
+
+<% include partials/footer %>
+<% include partials/after-footer %>

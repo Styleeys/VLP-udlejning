@@ -1,0 +1,18 @@
+<% include partials/head %> 
+<% include partials/header %>
+
+<div id="boxes">
+  <% results.forEach( result => { %>
+
+  <div class="box">
+    <h2><%= result.title %></h2>
+    <p>KL. <%= result.tid %></p>
+    <p>Dato: <%= result.dato %></p>
+    <a href="/event/<%= result.id %>">Læs mere</a>
+  </div>
+
+  <% }); %>
+</div>
+
+<% include partials/footer %> 
+<% include partials/after-footer %>

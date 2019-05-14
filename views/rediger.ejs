@@ -1,0 +1,45 @@
+<% include partials/head %>
+<% include partials/header %>
+<% include partials/adminPanel %>
+
+<form action="" method="POST" enctype="multipart/form-data">
+<div id="form_opret_id">
+        
+        <div class="form_opret">
+            <label>Title</label>
+            <input type="text" name="title" value="<%= result.title %>">
+        </div>
+    
+        <div class="form_opret">
+            <label>Tid</label>
+                <input type="text" name="tid" value="<%= result.dato %>">
+        </div>
+    
+        <div class="form_opret">
+            <label>Dato</label>
+                <input type="text" name="dato" value="<%= result.tid %>">
+        </div>
+    
+        <div class="form_opret">
+            <label>Varighed</label>
+                <input type="text" name="varighed" value="<%= result.varighed %>">
+        </div>
+    
+        <div class="form_opret">
+            <label>Sted</label>
+                <input type="text" name="sted" value="<%= result.sted %>">
+        </div>
+    
+        <div class="form_opret">
+            <label>Pris</label>
+                <input type="text" name="pris" value="<%= result.pris %>">
+        </div>
+    
+        <div class="form_opret">
+            <label>Info</label>
+                <input type="text" name="info" value="<%= result.info %>">
+        </div>
+        <button class="btnLogin" type="submit">Gem redigering</button>
+    </div>
+    
+</form>

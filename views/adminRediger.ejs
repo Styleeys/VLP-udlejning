@@ -1,0 +1,15 @@
+<% include partials/head %>
+<% include partials/header %>
+<% include partials/adminPanel %>
+
+    <h1 class="nytEvent">Rediger event</h1>
+    
+    <div class="selectRediger">
+        <% results.forEach( result => { %>
+            <a href="/adminRediger/<%= result.id %>"><%= result.title %></a>
+            <br>
+    <% }); %>
+    </div>
+
+<% include partials/footer %>
+<% include partials/after-footer %>

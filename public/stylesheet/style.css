@@ -51,34 +51,24 @@ nav img {
 
 /*==================================Main=========================================================*/
 
-main .midSite {
-    margin: 4em 13em;
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: 1fr 1fr;
+main {
+    display: flex;
 }
-main .midSite img {
-    width: 28em;
-    height: 24em;
+main section {
+    margin: auto;
 }
-main .midSite h2 {
-    text-align: center;
-    margin-top: 3em;
-    margin-left: 1em;
-    border-bottom: 1px solid #b4495a;
-    font-size: 2em;
+main section img {
+    height: 22em;
+    width: auto;
+    margin: 5.1em 2em;
 }
-main .lowSite {
-    margin: 4em 13em;
+main article {
+    margin: auto;
 }
-.arrow {
-    font-size: 2em;
-    color: #b4495a;
-    text-align: center;
+.annoncer_hi {
+    height: 5em;
 }
-.p_forside {
-    margin-left: 2em;
-}
+
 /*==================================Footer=========================================================*/
 footer {
     background-color: #42323c;

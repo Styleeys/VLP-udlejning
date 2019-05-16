@@ -6,13 +6,14 @@
 
   <div class="box">
     <h2><%= result.title %></h2>
-    <p>KL. <%= result.sted %></p>
-    <p>Dato: <%= result.info %></p>
+    <p>Adresse: <%= result.sted %></p>
+    <p>Pris: <%= result.pris %>Kr.</p>
     <a href="/event/<%= result.id %>">Læs mere</a>
   </div>
 
   <% }); %>
 </div>
+<div class="annoncer_hi"></div>
 
 <% include partials/footer %> 
 <% include partials/after-footer %>

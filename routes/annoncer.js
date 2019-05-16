@@ -1,7 +1,7 @@
 const db = require("../config/mysql")();
 module.exports = function(app) {
 
-  app.get("/", (req, res, next) => {
+  app.get("/annoncer", (req, res, next) => {
     // console.log('session user.id er ' + req.session.user_id); //Chek id
     let sql = `SELECT
         arrangementer.id,

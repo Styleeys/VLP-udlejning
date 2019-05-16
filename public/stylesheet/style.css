@@ -1,0 +1,333 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #fffbf1;
+}
+header {
+    height: 2em;
+    width: 100%;
+}
+/*==================================Header=========================================================*/
+
+header .searchBar {
+    text-align: center;
+}
+header .searchBar input {
+    height: 3em;
+    width: 22em;
+    border: 1px solid black;
+    background-color: #fffbf1;
+}
+header .searchBar ::placeholder {
+    font-size: 1.5em;
+}
+header .searchBar button {
+    background-color: #b4495a;
+    border-color: #b4495a;
+}
+
+/*==================================Nav=========================================================*/
+
+nav {
+    background-color: #42323c;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a {
+    color: #f6ede0;
+    margin: 0 2em;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+nav a:hover {
+    color: #b4495a;
+}
+nav img {
+    width: 10em;
+    height: auto;
+}
+
+/*==================================Main=========================================================*/
+
+main {
+    display: flex;
+}
+main section {
+    margin: auto;
+}
+main section img {
+    height: 22em;
+    width: auto;
+    margin: 5.1em 2em;
+}
+main article {
+    margin: auto;
+}
+.annoncer_hi {
+    height: 5em;
+}
+
+/*==================================Footer=========================================================*/
+footer {
+    background-color: #42323c;
+}
+footer p {
+    text-align: center;
+    color: #f6ede0;
+}
+/*==================================Book mødelokale=========================================================*/
+.booking {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+.booking img {
+    height: 20em;
+    width: auto;
+}
+.booking_knap {
+    display: flex;
+    justify-content: center;
+}
+.booking_knap a {
+    text-decoration: none;
+    font-size: 2em;
+    border: 2px solid #f6ede0;
+    background-color: #f6ede0;
+    color: #42323c;
+    margin-bottom: 3em;
+}
+/*==================================Kontakt=========================================================*/
+#kontaktWrap {
+    display: flex;
+    justify-content: center;
+}
+.kontaktImg img {
+    height: 21em;
+    width: auto;
+    margin: auto;
+    padding: 8em;
+}
+.kontaktInfo {
+    margin: auto;
+    font-size: 1.3em;
+}
+/*==================================Kommende events på forsiden=========================================================*/
+
+#boxes {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2em;
+}
+.box {
+    padding: 1em;
+    border: 1.5px solid black;
+    margin: 2em 2em;
+    width: 16em;
+}
+.box a {
+    text-decoration: none;
+    border: 3px solid #42323c;
+    background-color: #f6ede0;
+    color: black;
+    border-radius: 10px;
+    padding: 4px;
+    float: right;
+    margin-top: 8px;
+}
+.box a:hover {
+    background-color: #fffbf1;
+}
+.box p {
+    margin: 0.2em;
+    font-weight: 700;
+    border-bottom: 1px solid #b4495a;
+}
+.box h2 {
+    margin: 0 0 10px 0;
+}
+.box:hover {
+    background-color: black;
+    color: white;
+}
+
+/*==================================ADMIN OPRET EVENT=========================================================*/
+#form_opret_id {
+    text-align: center;
+    width: 25em;
+    height: 40em;
+    background-color: #f6ede0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form_opret {
+    margin: 2em;
+    padding-top: 2em;
+    
+}
+.form_opret label {
+    float: left;
+    border-bottom: 1px solid #b4495a;
+    width: 10em;
+}
+.form_opret input {
+    float: right;
+    height: 2em;
+}
+.nytEvent {
+    text-align: center;
+    color:#b4495a;
+}
+
+/*==================================OPRET ADMIN=========================================================*/
+
+.opretAdmin {
+    display: flex;
+    justify-content: center;
+}
+.opretAdmin {
+    height: 2em;
+    width: auto;
+    margin: 10px;
+}
+.opretAdmin label {
+    font-size: 1.4em;
+}
+
+/*==================================ADMIN Login=========================================================*/
+
+.adminLogin {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+.adminLogin input {
+    height: 2em;
+    width: auto;
+    margin: 10px;
+}
+.adminLogin label {
+    font-size: 1.4em;
+}
+.btnWrap {
+    text-align: center;
+}
+.btnLogin {
+    position: absolute;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+.x_space {
+    height: 20em;
+}
+
+/*==================================SELECT REDIGER=========================================================*/
+
+.selectRediger {
+    text-align: center;
+}
+.selectRediger a {
+    text-decoration: none;
+    border-bottom: 1px solid #b4495a;
+    font-size: 1.5em;
+}
+
+/*==================================adminPanel=========================================================*/
+.adminPanel {
+    height: 1.8em;
+    background-color: #f6ede0;
+}
+.adminPanel a {
+    text-decoration: none;
+    margin: 0 1em;
+    font-size: 1.3em;
+    color: #42323c;
+}
+.adminPanel a:hover {
+    color: #b4495a;
+}
+.admin_hi {
+    height: .6em;
+}
+
+
+/*==================================Enkelside=========================================================*/
+#resultat {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+.resultatSøgning {
+    padding: 1em;
+    border: 1.5px solid black;
+    margin: 2em 2em;
+    width: 16em;
+}
+.resultatSøgning p {
+    border-bottom: 1px solid #b4495a;
+}
+
+/*===============================Media queries ====================================FETA==========*/
+
+@media only screen and (max-width:1400px) {
+
+    /*==================================header=*/
+    header .searchBar {
+        text-align: center;
+    }
+    header .searchBar input {
+        height: 3em;
+        width: 22em;
+        border: 1px solid black;
+        background-color: #fffbf1;
+    }
+    header .searchBar ::placeholder {
+        font-size: 1.5em;
+    }
+    header .searchBar button {
+        background-color: #b4495a;
+        border-color: #b4495a;
+    }
+    /*==================================Nav=*/
+
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    font-size: 1.5em;
+    
+}
+
+/*==================================Kommende events=*/
+
+#boxes {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+ } /*===============================Media querie END === */
+
+
+
+
+@media only screen and (max-width:1200px) {
+
+    /*==================================Nav=*/
+    nav a {
+        margin: .5em;
+        text-decoration: none;
+        font-size: 1.5em;
+        
+    }
+    /*==================================Kommende events=*/
+    
+    #boxes {
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+}/*===============================Media querie END === */

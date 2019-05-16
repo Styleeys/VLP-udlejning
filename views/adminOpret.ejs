@@ -1,0 +1,42 @@
+<% include partials/head %>
+<% include partials/header %>
+<% include partials/adminPanel %>
+
+<form action="/adminOpret" method="POST" enctype="multipart/form-data">
+
+    <h1 class="nytEvent">Opret nyt event</h1>
+    <div id="form_opret_id">
+    <div class="form_opret">
+        <label>Title</label>
+        <input type="text" name="title">
+    </div>
+    <div class="form_opret">
+        <label>Tid</label>
+            <input type="text" name="tid">
+    </div>
+    <div class="form_opret">
+        <label>Dato</label>
+            <input type="text" name="dato">
+    </div>
+    <div class="form_opret">
+        <label>Varighed</label>
+            <input type="text" name="varighed">
+    </div>
+    <div class="form_opret">
+        <label>Sted</label>
+            <input type="text" name="sted">
+    </div>
+    <div class="form_opret">
+        <label>Pris</label>
+            <input type="text" name="pris">
+    </div>
+    <div class="form_opret">
+        <label>Info</label>
+            <input type="text" name="info">
+    </div>
+    <button class="btnLogin" type="submit">Opret event</button>
+</div>
+</form>
+
+<% include partials/footer %>
+<% include partials/after-footer %>

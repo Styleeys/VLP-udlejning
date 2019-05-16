@@ -1,0 +1,23 @@
+<% include partials/head %>
+<% include partials/header %>
+<% include partials/adminPanel %>
+
+<form action="/opret/admin" method="post">
+    <h1 class="nytEvent">Opret ny admin konti</h1>
+    <div class="opretAdmin">
+        <label>Username:</label>
+        <input type="text" name="opretUsername">
+    </div>
+
+    <div class="opretAdmin">
+        <label>Password:</label>
+        <input type="text" name="opretPassword">
+    </div>
+    <div class="btnWrap">
+        <button class="btnLogin" type="submit">Opret</button>
+    </div>
+</form>
+
+
+<% include partials/footer %>
+<% include partials/after-footer %>
